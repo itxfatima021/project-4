@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+<div class="logo">
+    <img src="leaf-logo-removebg-preview.png" alt="">
+</div>
+<div class="menu">
+    <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Our Mission</li>
+        <li>
+            <select name="pages" id="pages">
+                <option value="Pages" disabled selected>Pages</option>
+                <option value="Page 1">Page 1</option>
+                <option value="Page 2">Page 2</option>
+                <option value="Page 3">Page 3</option>
+            </select>
+        </li>
+        <li>
+            <select name="support" id="support">
+                <option value="Support" disabled selected>Support</option>
+            </select>
+        </li>
+    </ul>
+</div>
+<div class="sign">
+    <button type="button" class="sign-btn" id="Contribute"> <i class="fa-solid fa-circle-dollar-to-slot"></i> Contribute</button>
+    <button type="button" class="sign-btn" id="sign-button"><i class="fa-solid fa-right-to-bracket"></i> Sign In</button>
+</div>
+<span onclick="openNav()" class="openbtn">
+    &#9776;
+</span>
+        </div>
+    </header>
+    <div class="sidenav" id="sideNav">
+        <a href="javascript:void(0)" onclick="closeNav()" class="closebtn">&times;</a>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Our Mission</a>
+        <select name="pages.sid" id="pages.sid">
+            <option value="Pages" disabled selected>Pages</option>
+            <option value="Page 1">Page 1</option>
+            <option value="Page 2">Page 2</option>
+            <option value="Page 3">Page 3</option>
+        </select>
+        <select name="support.sid" id="support.sid">
+            <option value="Support" disabled selected>Support</option>
+        </select>
+    </div>
+    <section class="section">
+       <div class="section-left">
+   <p class="safeguard">
+    We safeguard the environment.
+   </p>
+      <p class="safe-desc">Over the past several decades, as the world has increasingly warmed, so has its potential to burn.</p>
+     <div class="sect-left-btns"> <button type="button" class="mission"><i class="fa-solid fa-book-open-reader"></i> Our mission</button> <button type="button" class="download"><i class="fa-solid fa-file-arrow-down"></i> Download report</button></div>
+       </div>
+       <div class="section-right">
+        <img src="tree.png" alt="">
+       </div>
+    </section>
+    <footer>
+        <div class="footer">
+            <div class="footer-items" id="footer-box1">
+                <p class="footer-headings">Carbon Dioxide</p>
+                <p class="counting"><i class="fa-solid fa-arrow-up-long"></i> 412</p>
+                <p class="footer-des">parts per million</p>
+            </div>
+            <div class="footer-items" id="footer-box2">
+                <p class="footer-headings">Global Temperature</p>
+                    <p class="counting"><i class="fa-solid fa-arrow-up-long"></i> 1.9 F</p>
+                <p class="footer-des">since 1880</p>
+            </div>
+            <div class="footer-items" id="footer-box3">
+                <p class="footer-headings">Arctic Ice Minimum</p>
+                <p class="counting"><i class="fa-solid fa-arrow-down"></i> 13 %</p>
+                <p class="footer-des">percent per decade</p>
+            </div>
+            <div class="footer-items" id="footer-box4">
+                <p class="footer-headings">Sea Level</p>
+                <p class="counting"><i class="fa-solid fa-arrow-up-long"></i> 3.3</p>
+                <p class="footer-des">milimeters per year</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
